@@ -1,0 +1,92 @@
+/* ------------- BEST SELLERS CARD AND CAROUSEL-------------- */
+.carousel-bestseller{
+    height:70vh;
+    }
+    .slide-bestseller{
+    width: 22%;
+    height: 100%;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    }
+    .slide__img-box{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    }
+    .product__details{
+        height: max-content;
+        text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;;
+    }
+    
+    .product__name{
+    font-weight: 700;
+    font-size: 2.7rem;
+    }
+    .product__description{
+    font-size: 1.4rem;
+    font-family: var(--secondary-font);
+    width: 70%;
+    }
+    .btn--product-cta{
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-color: currentColor;
+    text-transform: uppercase;
+    color: var(--main-txt-color);
+    }
+    .btn--product-cta:hover{
+        color: var(--secondary-txt-color);
+        
+    }
+
+
+
+    /* ------------------ PRESS CAROUSEL AND CARD */
+
+    .section--press{
+
+background-color: var(--main-bg-color);
+padding: 5rem 3rem;
+    }
+    .carousel-press{
+height: 50vh;
+    }
+    .slide-press{
+margin-right: 5rem;
+width: 30%;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 3rem;
+align-items: center;
+justify-items: center;
+    }
+    .press__icon-box{
+/* width: 1rem;
+height: 1.5rem; */
+    }
+    .press__content{
+        width: 70%;
+font-family: var(--secondary-font);
+font-size: 1.4rem;
+font-weight: 500;
+line-height: 2.4;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+    .press__logo{
+width: 30%;
+
+    }
+    .img--press{
+        width: 90% !important;
+        object-fit: contain;
+    }

@@ -87,52 +87,7 @@ font-weight: 700;
 align-self: center;
 justify-self: center;
 }
-.carousel-bestseller{
-height:70vh;
-}
-.slide-bestseller{
-width: 22%;
-height: 100%;
-margin-right: 5rem;
-display: flex;
-flex-direction: column;
-gap: 2.5rem;
-}
-.slide__img-box{
-width: 70%;
-height: auto;
-margin: 0 auto;
-}
-.product__details{
-    height: max-content;
-    text-align: center;
-display: flex;
-flex-direction: column;
-grid-gap: 2rem;
-align-items: center;
-justify-items: center;;
-}
 
-.product__name{
-font-weight: 700;
-font-size: 2.7rem;
-}
-.product__description{
-font-size: 1.4rem;
-font-family: var(--secondary-font);
-width: 70%;
-}
-.btn--product-cta{
-font-size: 1.4rem;
-font-weight: 700;
-border-color: currentColor;
-text-transform: uppercase;
-color: var(--main-txt-color);
-}
-.btn--product-cta:hover{
-    color: var(--secondary-txt-color);
-    
-}
 
 /* ---------------- SECTION ABOUT --------------- */
 .section--about{
@@ -150,11 +105,11 @@ justify-items: center;padding: 8rem 0;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.7rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;    
+}
+.sub-title--about{
     text-align: center;
-    color: var(--secondary-color);
-    
-    
+    color: var(--secondary-color);  
 }
 .title--about{
    color: var(--secondary-color);
@@ -168,4 +123,27 @@ justify-items: center;padding: 8rem 0;
 }
 .btn--cta-about{
     color: var(--secondary-color);
+}
+
+
+/* ---------------- SECTION NEW -------------------- */
+.section--info{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+.info__content{
+
+}
+.sub-title--info{
+
+}
+.title--info{
+
+}
+.btn--product-cta--info{
+
+}
+.info__banner{
+
 }

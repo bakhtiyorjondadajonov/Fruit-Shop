@@ -1,16 +1,17 @@
 const navBarCarousel = document.querySelector(".navigation__bar__carousel");
 const bestSellerCarousel = document.querySelector(".carousel-bestseller");
+const pressCarousel = document.querySelector(".carousel-press");
 var previousButton = document.querySelector(".btn--nav-left");
 var nextButton = document.querySelector(".btn--nav-right");
 
-export const carouselFn = (elem, btnLeft, btnRight) => {
+export const carouselFn = (elem, btnLeft, btnRight, pageDots) => {
   if (elem) {
     const flkty = new Flickity(elem, {
       // options
       cellAlign: "left",
       contain: true,
       prevNextButtons: false,
-      pageDots: false,
+      pageDots: pageDots,
     });
 
     // previous
@@ -27,5 +28,6 @@ export const carouselFn = (elem, btnLeft, btnRight) => {
     }
   }
 };
-carouselFn(navBarCarousel, previousButton, nextButton);
-carouselFn(bestSellerCarousel);
+carouselFn(navBarCarousel, ...[previousButton, nextButton], false);
+carouselFn(bestSellerCarousel, ...[false, false], false);
+carouselFn(pressCarousel, ...[false, false], true);
