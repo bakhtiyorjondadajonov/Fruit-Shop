@@ -1,0 +1,28 @@
+
+/* -------------------- VARIABLES -------------------- */
+    :root{
+       --main-txt-color: black;
+       --main-bg-color: #FFFBF6;
+       --secondary-color:white;
+       --secondary-font:'Montserrat', sans-serif;
+    }
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+font-size: 62.5%;
+font-family: 'Philosopher', sans-serif;
+
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
