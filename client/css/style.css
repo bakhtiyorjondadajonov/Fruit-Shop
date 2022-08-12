@@ -76,6 +76,17 @@ font-size: 7.5rem;
 
 
 /* ----------------- SECTION BESTSELLER --------------- */
+.btn--bestseller-right{
+width: 5rem;
+cursor: pointer;
+display: none;
+
+}
+.btn--bestseller-left{
+    width: 5rem;
+    cursor: pointer;
+    display: none;
+}
 .section--bestseller{
 height: max-content;
 display: flex;
@@ -88,6 +99,7 @@ font-size: 7rem;
 font-weight: 700;
 align-self: center;
 justify-self: center;
+width: max-content;
 }
 
 
@@ -154,15 +166,11 @@ font-size: 6rem;
     width: 100%;
 }
 .info__banner--new{
-    width: 90% !important;
-    height: 100%;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
-border-radius:55% 45% ;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+  }
 
-background-position: center;
-transform: rotate(15deg);
-overflow: hidden;
-}
 .info__banner--learn{
 width: 65%;
 height: 100%;
@@ -173,9 +181,10 @@ border-bottom-right-radius: 50rem;
 overflow: hidden;
 }
 .info__banner-img{
-   
-    transform: rotate(-15deg); 
-    overflow: hidden;
+    width: 80%;
+    height: 80%;
+   object-fit: contain;
+     
 }
 .paragraph{
     font-family: var(--secondary-font);
@@ -337,18 +346,29 @@ font-size: 6rem;
         .header__content{
 background-size: 80%;
         }
-
+        .title--bestseller{
+            font-size: 6rem;
+        }
+        .btn--bestseller-right,.btn--bestseller-left{
+display: inline;
+        }
     .title--about{
 width: 80%;
 font-size: 6rem;
     }
     .info__banner--learn{
-        width: 80%;
+        width: 55%;
+    }
+    .info__banner{
+        text-align: center;
     }
     .section--info{
+        height: auto;
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
+        gap: 3rem;
+        padding: 4rem;
     }
     .info__content{
 grid-row: 2/3;
@@ -356,3 +376,73 @@ align-items: center;
 justify-items: center;
     }
  }
+@media (max-width:600px) {
+    html{
+        font-size: 50%;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    .header{
+      
+        /* grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,max-content); */
+        display: flex;
+        flex-direction: column;
+        /* height: auto; */
+        }
+        .header__img-box{
+height: 50%;
+overflow: hidden;
+        }
+        .header__img{
+            /* object-position: top; */
+        }
+        .header__content{
+          height: 40rem;
+          padding-bottom: 2rem;
+          background-size:contain;
+        }
+        .section--bestseller{
+            padding: 1rem;
+        }
+        .title{
+            font-size: 4.5rem;
+        }
+        /* .title--bestseller{
+            font-size: 5rem;
+        } */
+        .slide-bestseller{
+width: 45% !important;
+        }
+        .title--about{
+            width: 95%;
+        }
+        .slide-press{
+            width: 50%;
+        }
+        .press__content{
+            width: 100% !important;
+        }
+        .section--info{
+padding: 2rem;
+        }
+        .info__banner--learn{
+            height: 110%;
+        }
+        .section--ingredients{
+padding: 7rem 0;
+        }
+        .paragraph--ingredients{
+            width: 90%;
+            text-align: center;
+        }
+        .section--banner{
+            background-image: url('../public/images/mobile version/Cocteles-a-domicilio\ 1.png');
+            
+        }
+       
+        .section--join__gallery{
+            grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); 
+        }
+}
