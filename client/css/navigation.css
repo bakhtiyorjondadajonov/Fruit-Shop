@@ -88,4 +88,27 @@ width: 2rem;
 }
 .cart-icon-box{
 width: 5rem;
+margin-right: 1rem;
+}
+.hamburger-icon{
+   display: none; 
+   width: 4rem;
+   height: 4rem;
+}
+/* -------------- NAVIGATION RESPONSIVE */
+@media (max-width:1000px) {
+    .navigation__menu{
+        padding: 2rem;
+    }
+    .list__item{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:900px) {
+    .list__item{
+        display: none;
+    }
+    .hamburger-icon{
+        display: flex;
+    }
 }

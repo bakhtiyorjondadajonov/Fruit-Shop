@@ -32,7 +32,9 @@ img{
 .title{
 
 }
-
+.hidden{
+    display: none;
+}
 
 /* ----------------------- HEADER ---------------------- */
 .header{
@@ -131,19 +133,226 @@ justify-items: center;padding: 8rem 0;
 height: 100vh;
 display: grid;
 grid-template-columns: repeat(2,1fr);
+padding: 5rem 8rem;
+align-items: center;
 }
 .info__content{
-
+display: flex;
+flex-direction: column;
+gap: 1rem;
 }
 .sub-title--info{
 
 }
 .title--info{
-
+font-size: 6rem;
 }
 .btn--product-cta--info{
 
 }
 .info__banner{
+    width: 100%;
+}
+.info__banner--new{
+    width: 90% !important;
+    height: 100%;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+border-radius:55% 45% ;
+
+background-position: center;
+transform: rotate(15deg);
+overflow: hidden;
+}
+.info__banner--learn{
+width: 65%;
+height: 100%;
+justify-self: center;
+
+border-bottom-left-radius: 50rem;
+border-bottom-right-radius: 50rem;
+overflow: hidden;
+}
+.info__banner-img{
+   
+    transform: rotate(-15deg); 
+    overflow: hidden;
+}
+.paragraph{
+    font-family: var(--secondary-font);
+font-size: 1.4rem;
+font-weight: 500;
+line-height: 2.4rem;
+letter-spacing: 0em;
+
 
 }
+.paragraph--info{
+    text-align: left;
+    width: 75%;
+}
+/* ------------- SECTION INGREDIENTS ----------------- */
+.section--ingredients{
+display: flex;
+flex-direction: column;
+background-color: var(--main-bg-color);
+
+padding: 7rem;
+align-items: center;
+justify-items: center;
+
+}
+.ingredients__content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+gap: 2rem;
+}
+.title--ingredients{
+    
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 6.4rem;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.paragraph--ingredients{
+text-align: center;
+width: 70%;
+}
+.btn--product-cta--ingredients{
+color: var(--secondary-txt-color) !important;
+}
+.ingredients__gallery{
+   width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(20rem,21rem));
+justify-content: center;
+}
+.ingredient__box{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 2rem;
+}
+.ingredient__icon-box{
+/* width: 70%;
+height: 80%; */
+align-self: center;
+}
+.ingredient__name{
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    
+}
+/* -------- SECTION BANNER ---------------- */
+ .section--banner{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+height: 70vh;
+align-items: center;
+justify-content: center;
+background-image: url('../public/images/Cocteles-a-domicilio.png');
+background-repeat: no-repeat;
+background-size: cover;
+ }   
+
+ .sub-title--banner{
+    color: var(--secondary-color);
+ }
+ .title--banner{
+    color: var(--secondary-color);
+    font-family: Philosopher;
+font-size: 8rem;
+font-weight: 700;
+line-height: 6.4rem;
+letter-spacing: 0em;
+text-align: center;
+
+ }
+ .btn--product-cta--banner{
+    color: var(--secondary-color) !important;
+    margin-top: 4rem;
+ }
+
+ /* --------------- SECTION JOIN ------------------ */
+ .section--join{
+display: flex;
+flex-direction: column;
+height: 70vh;
+ }
+ .title--join{
+  
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 6.4rem;
+    letter-spacing: 0em;
+    text-align: center;
+    padding:5rem 3rem;
+ }
+ .section--join__gallery{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
+ }
+ .gallery-img__box{
+    width: 100%;
+    height: 100%;
+ }
+
+ /* ------------ RESPONSIVE --------------- */
+ @media (max-width:1200px) {
+    .title--about{
+width: 70%;
+    }
+    .info__banner--learn{
+        width: 75%;
+    }
+ }
+ @media (max-width:1000px) {
+    .title--about{
+width: 80%;
+font-size: 6rem;
+    }
+    .info__banner--learn{
+        width: 80%;
+    }
+ }
+ @media (max-width:900px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+       height: auto;  
+        }
+        .title--header{
+            font-size: 6rem;
+        }
+        .header__content{
+background-size: 80%;
+        }
+
+    .title--about{
+width: 80%;
+font-size: 6rem;
+    }
+    .info__banner--learn{
+        width: 80%;
+    }
+    .section--info{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .info__content{
+grid-row: 2/3;
+align-items: center;
+justify-items: center;
+    }
+ }
