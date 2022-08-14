@@ -1,0 +1,111 @@
+.bread-crumb{
+width: 100%;
+border-top: solid 1px var(--dark-secondary);
+border-bottom: solid 1px var(--dark-secondary);
+padding: 0.8rem 5rem;
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+.bread-crumb__item{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.bread-crumb__icon-box{
+height: 70%;
+
+}
+
+.header--plp{
+height: auto;
+display: flex;
+justify-content: center;
+padding: 3rem;
+}
+.title--plp{
+text-align: center;
+    font-size: 7rem;
+  
+    line-height: 6.4rem;
+    letter-spacing: 0em;
+   
+    text-transform: uppercase;
+    
+}
+.plp-container{
+display: flex;
+height: 60rem;
+flex-direction: column;
+}
+
+.plp-row{
+    
+   display: grid; 
+   grid-template-columns: repeat(3,1fr);
+   border-top: solid 1px var(--dark-secondary);
+}
+.plp-row__media{
+display: grid;
+grid-column: 2/-1;
+grid-template-columns: repeat(2,1fr);
+}
+.ingredients__gallery--plp{
+    grid-template-columns: repeat(3,1fr);
+}
+.ingredient__box--plp{
+    width: 12rem;
+}
+.ingerdient__img{
+   width: 100%;
+   object-fit: none;
+
+}
+
+/* ----------- PLP BANNER -----------------*/
+.plp__banner{
+padding: 5rem;
+color: var(--secondary-color);
+background-position: center;
+background-size: cover;
+overflow: hidden;
+}
+.plp__banner--light-bodied{
+background-image: url("../public/images/img.png");
+
+}
+.plp__banner--medium-bodied{
+    background-image: url("../public/images/img-2.png");
+}
+.plp__banner--full-bodied{
+    background-image: url("../public/images/img-3.png");
+
+}
+.title--plp-media{
+    text-transform:unset;
+    text-align: start;
+}
+@media (max-width:1100px) {
+    .plp__banner{ 
+        padding: 2rem;
+    }
+    .title--plp{
+        font-size: 5.5rem;
+    }
+}
+@media (max-width:900px) {
+    .plp-row{
+    
+        display: grid; 
+        grid-template-columns:1fr;
+        border-top: solid 1px var(--dark-secondary);
+     }
+     .plp-row__media{
+       
+        grid-column: 1/-1;
+       
+        }
+}

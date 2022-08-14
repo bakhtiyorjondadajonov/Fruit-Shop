@@ -12,14 +12,440 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/plp.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../js/controller/controller.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__bar">
+        <button class="btn btn--nav-left">
+          <img src="../public/images/icons/left.png" alt="arrow left" />
+        </button>
+        <div class="navigation__bar__carousel">
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+        </div>
+
+        <button class="btn btn--nav-right">
+          <img src="../public/images/icons/right.png" alt="arrow right" />
+        </button>
+      </div>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="hamburger-icon">
+            <img
+              src="../public/images/icons/hamburger.png"
+              alt="hamburger icon"
+            />
+          </li>
+          <li class="list__item list__item--dropdown">
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">About</li>
+          <li class="list__item list__item--dropdown">
+            Fun stuff
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Find us</li>
+        </ul>
+        <div class="navigation__logo">
+          <img src="../public/images/logo.png" alt="logo" />
+        </div>
+        <ul class="navigation__list">
+          <li class="list__item list__item--dropdown">
+            <div class="flag-box">
+              <img
+                src="../public/images/icons/uzbekistan (2).png"
+                alt="flag icon"
+              />
+            </div>
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Contact</li>
+
+          <li class="list__item">Login</li>
+          <li class="cart-icon-box">
+            <img src="../public/images/icons/cart.png" alt="cart icon" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bread-crumb">
+      <div class="bread-crumb__item">Home</div>
+      <div class="bread-crumb__icon-box">
+        <img
+          src="../public/images/icons/arrow-head-right.png "
+          alt="icon arrow head"
+        />
+      </div>
+      <div class="bread-crumb__item active">Juices</div>
+    </div>
+    <header class="header header--plp">
+      <h1 class="title title--plp">Shop Juices</h1>
+    </header>
+    <main class="plp-container">
+      <div plp-type="main" class="plp-row">
+        <div class="variety-pack variety-pack--main">
+          <div class="title variety-pack--title">Variety Pack</div>
+          <div class="paragraph paragraph--variety-pack">
+            - Delicate and lean to sip -
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="plp-row__media">
+          <div class="product-card product-card--desktop">
+            <div class="product__img-box">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+          <div class="product-card product-card--desktop">
+            <div class="product__img-box">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+          <div class="product-card product-card--mobile">
+            <div class="product__img-box product__img-box--mobile">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img product__img--mobile"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <p class="product__description">
+              A three-bottle kit with De Soi’s Light, Medium and Full bodied
+              flavors.
+            </p>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div plp-type="light" class="plp-row">
+        <div class="variety-pack variety-pack--product">
+          <div class="title variety-pack--title">Light-bodied</div>
+          <div class="paragraph paragraph--variety-pack">
+            - Delicate and lean to sip -
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="ingredients__gallery ingredients__gallery--plp">
+            <div class="ingredient__box">
+              <div class="ingredient__icon-box ingredient__box--plp">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/rose.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name ingredient__name">Rose</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/earl-gray.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">earl-gray</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/pear.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">pear</div>
+            </div>
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="plp-row__media">
+          <div class="plp__banner plp__banner--light-bodied">
+            <div class="title title--plp title--plp-media">
+              Happy <br />
+              hour <br />
+              24/7
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product__img-box">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div plp-type="medium" class="plp-row">
+        <div class="variety-pack variety-pack--product">
+          <div class="title variety-pack--title">Medium-bodied</div>
+          <div class="paragraph paragraph--variety-pack">
+            - Delicate and lean to sip -
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="ingredients__gallery ingredients__gallery--plp">
+            <div class="ingredient__box">
+              <div class="ingredient__icon-box ingredient__box--plp">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/rose.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name ingredient__name">Rose</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/earl-gray.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">earl-gray</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/pear.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">pear</div>
+            </div>
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="plp-row__media">
+          <div class="product-card">
+            <div class="product__img-box">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+          <div class="plp__banner plp__banner--medium-bodied">
+            <div class="title title--plp title--plp-media">
+              New <br />
+              lifestyle
+            </div>
+          </div>
+        </div>
+      </div>
+      <div plp-type="full" class="plp-row">
+        <div class="variety-pack variety-pack--product">
+          <div class="title variety-pack--title">Full-bodied</div>
+          <div class="paragraph paragraph--variety-pack">
+            - Delicate and lean to sip -
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="ingredients__gallery ingredients__gallery--plp">
+            <div class="ingredient__box">
+              <div class="ingredient__icon-box ingredient__box--plp">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/rose.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name ingredient__name">Rose</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/earl-gray.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">earl-gray</div>
+            </div>
+            <div class="ingredient__box ingredient__box--plp">
+              <div class="ingredient__icon-box">
+                <img
+                  class="ingerdient__img"
+                  src="../public/images/icons/pear.png"
+                  alt="rose icon"
+                />
+              </div>
+
+              <div class="ingredient__name">pear</div>
+            </div>
+          </div>
+          <div class="variety-pack__content">
+            <span class="variety-pack__name">Adaptogenic ingredients: </span>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="plp-row__media">
+          <div class="plp__banner plp__banner--full-bodied">
+            <div class="title title--plp title--plp-media">
+              Rich in <br />
+              flavor
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product__img-box">
+              <img
+                src="../public/images/epach-bottle.png"
+                alt="peach Pear-bottle"
+                class="product__img"
+              />
+            </div>
+            <div class="product__name">Bottle</div>
+            <div class="product__review">
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--filled">&nbsp;</div>
+              <div class="review__icon review_icon--regular">&nbsp;</div>
+              <div class="review__amount">(32 reviews)</div>
+            </div>
+            <div class="product__price">$35.59</div>
+            <a href="#" class="btn btn--cta btn--cta-card">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -6,6 +6,7 @@
        --secondary-color:white;
        --secondary-txt-color:#BB6B1E;
        --secondary-font:'Montserrat', sans-serif;
+       --dark-secondary:#CBCBCB;
     }
 *,*:after,*:before{
     margin: 0;
@@ -16,6 +17,10 @@ html{
 font-size: 62.5%;
 font-family: 'Philosopher', sans-serif;
 
+}
+.active{
+    /* font-family:  sans-serif !important; */
+    font-weight: 700 !important;
 }
 
 .btn{
@@ -30,7 +35,7 @@ img{
 }
 
 .title{
-
+font-weight: 700;
 }
 .hidden{
     display: none;
@@ -96,7 +101,7 @@ padding: 5rem;
 }
 .title--bestseller{
 font-size: 7rem;
-font-weight: 700;
+/* font-weight: 700; */
 align-self: center;
 justify-self: center;
 width: max-content;
@@ -128,7 +133,7 @@ justify-items: center;padding: 8rem 0;
 .title--about{
    color: var(--secondary-color);
     font-size: 8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 8rem;
     letter-spacing: 0em;
     text-align: center;
@@ -220,7 +225,7 @@ gap: 2rem;
 .title--ingredients{
     
     font-size: 8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 6.4rem;
     letter-spacing: 0em;
     text-align: center;
@@ -244,6 +249,8 @@ display: flex;
 flex-direction: column;
 gap: 1rem;
 padding: 2rem;
+justify-content: space-between;
+align-items: center;
 }
 .ingredient__icon-box{
 /* width: 70%;
@@ -257,6 +264,8 @@ align-self: center;
     font-weight: 600;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
+    text-align: center;
+    width: max-content;
     text-align: center;
     
 }
@@ -280,7 +289,7 @@ background-size: cover;
     color: var(--secondary-color);
     font-family: Philosopher;
 font-size: 8rem;
-font-weight: 700;
+/* font-weight: 700; */
 line-height: 6.4rem;
 letter-spacing: 0em;
 text-align: center;
@@ -300,7 +309,7 @@ height: 70vh;
  .title--join{
   
     font-size: 8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 6.4rem;
     letter-spacing: 0em;
     text-align: center;
