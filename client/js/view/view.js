@@ -1,10 +1,13 @@
 const navBarCarousel = document.querySelector(".navigation__bar__carousel");
 const bestSellerCarousel = document.querySelector(".carousel-bestseller");
 const pressCarousel = document.querySelector(".carousel-press");
+const pdpHeaderCarousel = document.querySelector(".header--pdp__carousel");
 const previousButton = document.querySelector(".btn--nav-left");
 const nextButton = document.querySelector(".btn--nav-right");
 const btnBestsellerRight = document.querySelector(".btn--bestseller-right");
 const btnBestsellerLeft = document.querySelector(".btn--bestseller-left");
+const btnPdpHeaderLeft = document.querySelector(".btn--pdp-left");
+const btnPdpHeaderRight = document.querySelector(".btn--pdp-right");
 
 export const carouselFn = (elem, btnLeft, btnRight, pageDots) => {
   if (elem) {
@@ -35,3 +38,4 @@ carouselFn(
   false
 );
 carouselFn(pressCarousel, ...[false, false], true);
+carouselFn(pdpHeaderCarousel, ...[btnPdpHeaderLeft, btnPdpHeaderRight], true);

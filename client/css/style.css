@@ -6,6 +6,7 @@
        --secondary-color:white;
        --secondary-txt-color:#BB6B1E;
        --secondary-font:'Montserrat', sans-serif;
+       
        --dark-secondary:#CBCBCB;
     }
 *,*:after,*:before{
@@ -323,6 +324,42 @@ grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
     width: 100%;
     height: 100%;
  }
+
+/* ------------ BREAD CRUMP --------------------- */
+
+.bread-crumb{
+    width: 100%;
+    border-top: solid 1px var(--dark-secondary);
+    border-bottom: solid 1px var(--dark-secondary);
+    padding: 0.8rem 5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    }
+    .bread-crumb__item{
+        font-family: var(--secondary-font);
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .bread-crumb__icon-box{
+    height: 70%;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
  /* ------------ RESPONSIVE --------------- */
  @media (max-width:1200px) {

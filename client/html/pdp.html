@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -21,8 +22,237 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/pdp.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../js/controller/controller.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__bar">
+        <button class="btn btn--nav-left">
+          <img src="../public/images/icons/left.png" alt="arrow left" />
+        </button>
+        <div class="navigation__bar__carousel">
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+        </div>
+
+        <button class="btn btn--nav-right">
+          <img src="../public/images/icons/right.png" alt="arrow right" />
+        </button>
+      </div>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="hamburger-icon">
+            <img
+              src="../public/images/icons/hamburger.png"
+              alt="hamburger icon"
+            />
+          </li>
+          <li class="list__item list__item--dropdown">
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">About</li>
+          <li class="list__item list__item--dropdown">
+            Fun stuff
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Find us</li>
+        </ul>
+        <div class="navigation__logo">
+          <img src="../public/images/logo.png" alt="logo" />
+        </div>
+        <ul class="navigation__list">
+          <li class="list__item list__item--dropdown">
+            <div class="flag-box">
+              <img
+                src="../public/images/icons/uzbekistan (2).png"
+                alt="flag icon"
+              />
+            </div>
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Contact</li>
+
+          <li class="list__item">Login</li>
+          <li class="cart-icon-box">
+            <img src="../public/images/icons/cart.png" alt="cart icon" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bread-crumb">
+      <div class="bread-crumb__item">Home</div>
+      <div class="bread-crumb__icon-box">
+        <img
+          src="../public/images/icons/arrow-head-right.png "
+          alt="icon arrow head"
+        />
+      </div>
+      <div class="bread-crumb__item active">Juices</div>
+    </div>
+    <header class="header--pdp">
+      <div class="pdp__btn-box">
+        <span class="btn--pdp-left">&larr;</span>
+        <span class="btn--pdp-right">&rarr;</span>
+      </div>
+      <div class="header--pdp__carousel">
+        <div class="header--pdp__slide">
+          <div class="header--pdp__img-box">
+            <img src="../public/images/epach-bottle.png" alt="peach bottle" />
+          </div>
+        </div>
+        <div class="header--pdp__slide">
+          <div class="header--pdp__img-box">
+            <img src="../public/images/Rose-bottle.png" alt="peach bottle" />
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <div class="product-info__content">
+          <div class="product-info__name">Non-Alcoholic drink</div>
+          <h1 class="title title--product-info">Medium-bodied</h1>
+          <div class="product-info__description">Light and easy to sip</div>
+          <div class="product__review product__review--pdp">
+            <div class="review__icon review_icon--filled">&nbsp;</div>
+            <div class="review__icon review_icon--filled">&nbsp;</div>
+            <div class="review__icon review_icon--filled">&nbsp;</div>
+            <div class="review__icon review_icon--filled">&nbsp;</div>
+            <div class="review__icon review_icon--filled">&nbsp;</div>
+            <div class="review__amount">(32 reviews)</div>
+          </div>
+          <div class="product-info__details">
+            <p class="paragraph paragraph--product--info">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </p>
+            <ul class="product-info__product-benefits">
+              <li class="benefits">100% Natural ingredients</li>
+              <li class="benefits">Low Calories</li>
+              <li class="benefits">Perfect for every occassion</li>
+            </ul>
+          </div>
+          <div class="socials-box">
+            <div class="">Share on</div>
+
+            <div class="social-icon-box social-icon-box--facebook">&nbsp;</div>
+            <div class="social-icon-box social-icon-box--gmail">&nbsp;</div>
+            <div class="social-icon-box social-icon-box--prell">&nbsp;</div>
+          </div>
+          <div class="btn btn--cta btn--cta--product">SHOP THE CAN &rArr;</div>
+        </div>
+      </div>
+      <div class="product-selection">
+        <div class="product-selection__container">
+          <div class="product-selection__price">$35.59</div>
+          <div class="product-selection__ingredients">
+            <div class="title title--product-selection">
+              Adaptogenic Ingredients
+            </div>
+            <div class="ingredient__container">
+              <div class="ingredient__box ingredient__box--pdp">
+                <div class="ingredient__icon">
+                  <img
+                    class="ingredient__img"
+                    src="../public/images/icons/black-currant.png"
+                    alt="black currant"
+                  />
+                </div>
+                <div class="ingredient__name">Strawberry</div>
+              </div>
+              <div class="ingredient__box ingredient__box--pdp">
+                <div class="ingredient__icon">
+                  <img
+                    class="ingredient__img"
+                    src="../public/images/icons/earl-gray.png"
+                    alt="birch"
+                  />
+                </div>
+                <div class="ingredient__name">Birch</div>
+              </div>
+              <div class="ingredient__box ingredient__box--pdp">
+                <div class="ingredient__icon">
+                  <img
+                    class="ingredient__img"
+                    src="../public/images/icons/pear.png"
+                    alt="birch"
+                  />
+                </div>
+                <div class="ingredient__name">Apricot</div>
+              </div>
+            </div>
+          </div>
+          <div class="quantity-container">
+            <div class="title title--product-selection">Quantity</div>
+            <div class="quantity__description">
+              Complimentary domestic shipping on 2+ bottles.
+            </div>
+            <div class="quantity-box">
+              <button class="btn btn--quantity">1</button>
+              <button class="btn btn--quantity">2</button>
+              <button class="btn btn--quantity">3</button>
+            </div>
+          </div>
+          <div class="subscriptions-box">
+            <input
+              class="subcription-button"
+              type="radio"
+              name="subscription-btn"
+              id="small"
+            />
+            <label class="subscription-label" for="small"
+              >$35.59 One time purcahse</label
+            >
+            <input
+              class="subcription-button"
+              type="radio"
+              name="subscription-btn"
+              id="large"
+            />
+            <label class="subscription-label" for="large"
+              >$30.00 Subscription (15% off)</label
+            >
+          </div>
+          <p class="paragraph">Free domestic shipping over $50</p>
+          <button class="btn btn--cart">Add to bag</button>
+          <ul class="ingredient-nav">
+            <li class="ingredient-nav__item">
+              <span>Details</span><span>+</span>
+            </li>
+            <li class="ingredient-nav__item">
+              <span>Full Ingredients</span><span>+</span>
+            </li>
+            <li class="ingredient-nav__item">
+              <span>Product Featured</span><span>+</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
