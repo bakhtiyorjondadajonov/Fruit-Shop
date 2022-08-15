@@ -448,7 +448,7 @@ gap: 3rem;
 
 /* -------------------- SECTION FAQ ---------------- */
 .section--faq{
-    /* height: 70vh; */
+    height: 70vh;
 padding: 5rem 7rem;
 display: flex;
 gap: 5rem;
@@ -467,7 +467,7 @@ text-align: left;
 align-self: center;
 }
 .faq__content{
-    /* align-self: center; */
+    align-self: center;
 }
 .faq__list{
 list-style: none;
@@ -498,6 +498,141 @@ list-style: none;
     padding: 1rem;
 }
 
+/*  ----------------------- RECIPES SECTION ----------------*/
+ .section--recipes{
+height: 100vh;
+padding: 5rem 2rem;
+/* display: grid; */
+align-items: center;
+justify-items: center;
+background-color: var(--main-bg-color);
+}
+ .recipes__carousel{
+height: 85vh;
+ } 
+ .recipes__slide{
+width: 80%;
+height: 100%;
+margin-right: 5rem;
+display: flex;
+gap: 5rem;
+padding: 3rem 2rem;
+ }  
+ .recipes__gallery{
+width: 50%;
+background-color: var(--dark-secondary);
+position: relative;
+ }
+ .recipes__banner{
+width: 80%;
+ }
+ .recipes__banner-img{
+/* object-fit: none; */
+
+ }
+ .recipes__product{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right:-80px;
+z-index: 5;
+width: 375px;
+height: 441px;
+ }
+ .recipes__product-img{
+
+ }
+ .recipes__content{
+display: flex;
+flex-direction: column;
+gap: 3rem; 
+}
+.title--recipes{
+  
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 8.1rem;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.sub-title--recipes-top{
+    width: 100%;
+    text-align: right !important;
+    padding: 1rem;
+    border-bottom: solid 1px var(--dark-secondary);
+}
+.sub-title--recipes{
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    
+}
+.recipes__list{
+list-style: none;
+}
+.recipes__item{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.btn--recipes{
+  width: max-content;
+    font-family:var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--main-txt-color);
+    
+}
+.section--recommendation{
+
+}
+.title--recommendation{
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 8.1rem;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 3rem 0;
+}
+.carousel-recommendation{
+height: 70vh;
+}
+.slide-recommendation{
+    width: 33%;
+    /* margin-right: 5rem; */
+    height: auto;
+}
+.btn--recommendation-right,.btn--recommendation-left{
+    display: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:1000px) {
@@ -510,7 +645,14 @@ list-style: none;
     .benefits__slide{
         width: 50%;
     }
-   
+    .recipes__slide{
+        width: 100%;
+    }
+    .slide-recommendation{
+        width: 50% !important;
+        /* margin-right: 5rem; */
+        height: auto;
+    } 
       
 }
 @media (max-width:800px) {
@@ -548,6 +690,23 @@ width: 20%;
                 width: 90%;
                 text-align: center;
             }
+            .section--recipes{
+                height: auto;
+            }
+            .recipes__carousel{
+                height: 100vh;
+                 } 
+            .recipes__slide{
+                justify-content: space-between;
+            flex-direction: column;
+                gap: 3rem;
+              
+            }
+            .recipes__gallery{
+                width: 100%;
+                height: 50%;
+                 }
+                  
 }
 
 /* -------------- CAROUSEL MOBILE ------------------ */
@@ -626,5 +785,24 @@ display: none;
 }
 .title--faq{
     font-size: 5rem;
+}
+.recipes__slide{
+    padding: 3rem 0.5rem; 
+}
+.recipes__product{
+
+    width: 275px;
+    height: 300px;
+ }
+ .slide-recommendation{
+    width: 90% !important;
+    /* margin-right: 5rem; */
+    height: auto;
+} 
+.title--recommendation{
+    font-size: 3.5rem;
+}
+.btn--recommendation-right,.btn--recommendation-left{
+    display: inline;
 }
 }
