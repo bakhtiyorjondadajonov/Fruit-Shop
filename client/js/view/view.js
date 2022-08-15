@@ -2,6 +2,10 @@ const navBarCarousel = document.querySelector(".navigation__bar__carousel");
 const bestSellerCarousel = document.querySelector(".carousel-bestseller");
 const pressCarousel = document.querySelector(".carousel-press");
 const pdpHeaderCarousel = document.querySelector(".header--pdp__carousel");
+const benefitsCarousel = document.querySelector(".benefits__carousel");
+const pdpHeaderCarouselMobile = document.querySelector(
+  ".header--pdp__carousel-mobile"
+);
 const previousButton = document.querySelector(".btn--nav-left");
 const nextButton = document.querySelector(".btn--nav-right");
 const btnBestsellerRight = document.querySelector(".btn--bestseller-right");
@@ -39,3 +43,9 @@ carouselFn(
 );
 carouselFn(pressCarousel, ...[false, false], true);
 carouselFn(pdpHeaderCarousel, ...[btnPdpHeaderLeft, btnPdpHeaderRight], true);
+carouselFn(
+  pdpHeaderCarouselMobile,
+  ...[btnPdpHeaderLeft, btnPdpHeaderRight],
+  true
+);
+carouselFn(benefitsCarousel, ...[false, false], true);
