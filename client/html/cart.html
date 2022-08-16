@@ -12,14 +12,220 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../js/controller/controller.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__bar">
+        <button class="btn btn--nav-left">
+          <img src="../public/images/icons/left.png" alt="arrow left" />
+        </button>
+        <div class="navigation__bar__carousel">
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+          <div class="navigation__bar__slide">
+            Free domestic shipping on orders over $50 Learn more
+          </div>
+        </div>
+
+        <button class="btn btn--nav-right">
+          <img src="../public/images/icons/right.png" alt="arrow right" />
+        </button>
+      </div>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="hamburger-icon">
+            <img
+              src="../public/images/icons/hamburger.png"
+              alt="hamburger icon"
+            />
+          </li>
+          <li class="list__item list__item--dropdown">
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">About</li>
+          <li class="list__item list__item--dropdown">
+            Fun stuff
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Find us</li>
+        </ul>
+        <div class="navigation__logo">
+          <img src="../public/images/logo.png" alt="logo" />
+        </div>
+        <ul class="navigation__list">
+          <li class="list__item list__item--dropdown">
+            <div class="flag-box">
+              <img
+                src="../public/images/icons/uzbekistan (2).png"
+                alt="flag icon"
+              />
+            </div>
+            Shop
+            <div class="dropdown__icon-box">
+              <img
+                src="../public/images/icons/down-arrow-head.png"
+                alt="down icon"
+              />
+            </div>
+          </li>
+          <li class="list__item">Contact</li>
+
+          <li class="list__item">Login</li>
+          <li class="cart-icon-box">
+            <img src="../public/images/icons/cart.png" alt="cart icon" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="title title--cart">My Bag</h1>
+    <main class="container">
+      <div class="cart-menu cart-menu--product">product</div>
+      <div class="cart-menu cart-menu--price">price</div>
+      <div class="cart-menu cart-menu--qty">qty</div>
+      <div class="cart-menu cart-menu--total">total</div>
+      <div class="cart-product">
+        <div class="cart-product__img-box">
+          <img
+            src="../public/images/epach-bottle.png"
+            alt=" product img"
+            class="cart-product__img"
+          />
+        </div>
+        <ul class="product-info__list">
+          <li class="product-info__item product-type">Medium-bodied</li>
+          <li class="product-info__item product-quantity">1 bottle</li>
+          <li class="product-info__item delivery-period">
+            Delivery every month
+          </li>
+          <li class="product-info__item btn btn--remove">Remove</li>
+        </ul>
+      </div>
+      <div class="price">
+        <span class="price--current">$28.00 </span>
+        &nbsp;
+        <span class="price--original"> $30.00</span>
+      </div>
+      <div class="qty-btn-box">
+        <span class="btn btn--minus">-</span>
+        <span class="qty">1</span>
+        <span class="btn btn--plus">+</span>
+      </div>
+      <div class="price price--total">$28.00</div>
+      <div class="cart-product">
+        <div class="cart-product__img-box">
+          <img
+            src="../public/images/epach-bottle.png"
+            alt=" product img"
+            class="cart-product__img"
+          />
+        </div>
+        <ul class="product-info__list">
+          <li class="product-info__item product-type">Medium-bodied</li>
+          <li class="product-info__item product-quantity">1 bottle</li>
+          <li class="product-info__item delivery-period">
+            Delivery every month
+          </li>
+          <li class="product-info__item btn btn--remove">Remove</li>
+        </ul>
+      </div>
+      <div class="price">
+        <span class="price--current">$28.00 </span>
+        &nbsp;
+        <span class="price--original"> $30.00</span>
+      </div>
+      <div class="qty-btn-box">
+        <span class="btn btn--minus">-</span>
+        <span class="qty">1</span>
+        <span class="btn btn--plus">+</span>
+      </div>
+      <div class="price price--total">$28.00</div>
+      <div class="contact-container">
+        <form action="#" class="form--gift">
+          <label for="wish" class="label-gift"
+            ><div class="gift-box">
+              <img
+                src="../public/images/icons/gift.png"
+                alt="gift icon"
+                class="gift-img"
+              />
+            </div>
+            <span>sending a gift?</span>
+            <div class="btn btn--remove btn--gift">Remove</div>
+          </label>
+          <textarea
+            name="wish"
+            id="wish"
+            cols="30"
+            rows="10"
+            class="text-gift"
+            placeholder="Write your wish..."
+          ></textarea>
+          <button class="btn btn--contact">Save Message</button>
+        </form>
+        <form action="#" class="form--checkout">
+          <div class="subtotal"><span>Subtotal</span><span>$99.18</span></div>
+          <p class="paragraph paragraph--checkout">
+            Shipping & tax calculated at checkout
+          </p>
+          <div class="indicator-box">
+            <div class="indicator">&nbsp;</div>
+          </div>
+          <p class="paragraph paragraph--free-shipping">
+            <span class="bolded">$5.00</span> away from free shipping
+          </p>
+          <div class="protection">
+            <div class="protection__content">
+              <div class="protection__img-box">
+                <img
+                  src="../public/images/icons/route (1).png"
+                  alt=""
+                  class="protection__img"
+                />
+              </div>
+              package protection
+            </div>
+
+            <div class="protection__toggle">
+              <img
+                src="../public/images/icons/toggle.png"
+                alt="toggle"
+                class="toggle"
+              />
+            </div>
+            <div class="for-damage">
+              For damage, lost & theft for <span class="bolded">$0.99</span>
+            </div>
+          </div>
+          <div class="btn btn--contact">checkout</div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

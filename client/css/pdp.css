@@ -597,7 +597,7 @@ list-style: none;
     
 }
 .section--recommendation{
-
+height: auto;
 }
 .title--recommendation{
     font-size: 5.5rem;
@@ -608,12 +608,15 @@ list-style: none;
     padding: 3rem 0;
 }
 .carousel-recommendation{
-height: 70vh;
+height: 80vh;
+}
+.product-card--recommendation{
+    height: 100%;
 }
 .slide-recommendation{
     width: 33%;
     /* margin-right: 5rem; */
-    height: auto;
+    height: 100%;
 }
 .btn--recommendation-right,.btn--recommendation-left{
     display: none;
